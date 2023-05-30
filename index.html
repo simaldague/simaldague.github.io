@@ -3,14 +3,23 @@
 <head>
   <title>Personal notes on Stoicism</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    function openRandomNote() {
+      const notes = ['note1.html', 'note2.html'];  // Add all your note pages here
+      const randomNote = notes[Math.floor(Math.random() * notes.length)];
+      window.location.href = randomNote;
+    }
+  </script>
 </head>
 <body>
   <h1>Personal Notes on Stoicism</h1>
   <p id="main-intro">Welcome to my collection of personal reflections and notes on the philosophy of stoicism. This ancient wisdom, rooted in the teachings of the Stoic philosophers of Rome and Greece, offers valuable insights into living a contented and meaningful life. Explore my notes below to delve into this timeless philosophy.</p>
+  <button onclick="openRandomNote()">Open a Random Note</button>
   <h3>Notes</h3>
   <ul>
     <li><a href="note1.html">Note 1 : Seneca : On saving time 1</a></li>
     <li><a href="note2.html">Note 2 : Seneca : On saving time 2</a></li>
+    <!-- Add more notes -->
   </ul>
 </body>
 </html>
